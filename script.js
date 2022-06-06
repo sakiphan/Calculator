@@ -1,7 +1,7 @@
-let button = document.getElementsByTagName("button");
-let inputScreen = document.getElementsByClassName("inputScreen")[0];
-let calculate = document.querySelector("#calculate");
-let clear = document.querySelector("#clear");
+let button = document.getElementsByTagName('button');
+let inputScreen = document.getElementsByClassName('inputScreen')[0];
+let calculate = document.querySelector('#calculate');
+let clear = document.querySelector('#clear');
 
 
 // Functions
@@ -11,7 +11,7 @@ function print() {
 };
 
 function empty() {
-    inputScreen.value = "";
+    inputScreen.value = '';
 };
 
 function calculus() {
@@ -20,15 +20,15 @@ function calculus() {
 
 // Eventlisteners
 
-clear.addEventListener("click", empty);
+clear.addEventListener('click', empty);
 
 for (var i = 0; i < 19; i++) {
     if (i != 0 && i != 18) {
-        button[i].addEventListener("click", print);
+        button[i].addEventListener('click', print);
     };
 };
 
-calculate.addEventListener("click", calculus);
+calculate.addEventListener('click', calculus);
 
 
 // Keypress Events
